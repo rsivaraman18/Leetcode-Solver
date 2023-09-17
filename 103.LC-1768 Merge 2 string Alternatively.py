@@ -1,4 +1,3 @@
- # ( )
 
 '''
 Merging Of two strings alternatively
@@ -54,31 +53,3 @@ def mer():
             res = res + b[i]
     print(res)
 mer()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
