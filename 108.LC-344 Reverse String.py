@@ -1,6 +1,4 @@
-# ( )
-'''
-344 Reverse of letter in string
+'''344 Reverse of letter in string
 Q1 - inp1 -["h","e","l","l","o"]  out1-  ["o","l","l","e","h"]
 '''
 
