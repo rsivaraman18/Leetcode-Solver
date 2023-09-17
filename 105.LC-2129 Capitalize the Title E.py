@@ -1,4 +1,3 @@
-# ( )
 
 # error pops
 def title(word):
