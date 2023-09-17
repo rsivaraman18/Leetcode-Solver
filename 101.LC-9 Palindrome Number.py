@@ -1,4 +1,3 @@
-# ()
 print('Program to find Palindrome in Leet code')
 class Solution:
     def isPalindrome(self, x: int) -> bool:
