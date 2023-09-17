@@ -1,4 +1,3 @@
-
 '''
 Input: s = "RLRRLLRLRL"
 Output: 4
