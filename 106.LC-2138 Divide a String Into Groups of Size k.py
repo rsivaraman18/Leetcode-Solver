@@ -20,8 +20,6 @@ def splitword(s,k,fill):
 #splitword( s = "abcdefghi", k = 3, fill = "x" )
 #splitword( s = "abcdefghij", k = 3, fill = "x" )
 splitword("ctoyjrwtngqwt",8,'n')
-# ngqwt nnn
-
 
 
 def split():
