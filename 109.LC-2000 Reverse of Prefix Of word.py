@@ -4,10 +4,6 @@ word = "abcd efd", ch = "d"
 out  = "dcba efd"
 '''
 
-# ()
-
-
-
 def word(word,ch):
     wlen = len(word)
     ind = 0
@@ -25,9 +21,6 @@ def word(word,ch):
     #return(out)
     print(out)
         
-        
-
 
 word("abcdefd","d")
-
 
