@@ -5,7 +5,6 @@ Output: 4
 "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
 '''
 
-# ( )
 
 def balanced(s):
     
@@ -34,6 +33,4 @@ def balanced(s):
 balanced("RLRRLLRLRL")
 balanced("RLRRRLLRLL") 
 balanced("LLLLRRRR")
-
-
 
