@@ -1,4 +1,3 @@
-# ()
 
 def check(s):
     s1 = set(s)
