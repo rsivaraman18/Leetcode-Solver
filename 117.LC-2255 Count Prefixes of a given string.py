@@ -18,7 +18,6 @@ Both of the strings are a prefix of s.
 Note that the same string can occur multiple times in words, and it should be counted each time.
 '''
 
-# ()
 
 def CountPrefix(words,s):
     out = ''
