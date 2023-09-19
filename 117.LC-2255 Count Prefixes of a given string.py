@@ -33,7 +33,5 @@ def CountPrefix(words,s):
     print (count)
         
         
-        
-    
 
 CountPrefix(["a","b","c","ab","bc","abc"] ,"abc" )
