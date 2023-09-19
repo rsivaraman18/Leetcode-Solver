@@ -25,7 +25,6 @@ height(["Alice","Bob","Bob"] , [155,185,150] )
 
 
 
-
 '''
 2418. Sort the People
 
