@@ -10,9 +10,6 @@ Input: strs = ["1","01","001","0001"]
 Output: 1
 '''
 
-
-# ()
-
 def Maxstring(strs):
     li = []
     for i in strs:
