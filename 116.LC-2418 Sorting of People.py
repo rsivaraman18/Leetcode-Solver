@@ -1,4 +1,3 @@
-
 def height(names,heights):   
     d  = { }
     li = []
