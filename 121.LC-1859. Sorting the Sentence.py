@@ -1,4 +1,3 @@
-# ()
 ''' 1859. Sorting the Sentence '''
 
 def sortsentence(s):
