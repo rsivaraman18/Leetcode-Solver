@@ -18,17 +18,6 @@ def Counting(words):
                 count = count + 1
     print(count)
                 
-        
-    
-    
-            
-        
-    
-
-    
-
-
-
 
 Counting(["aba","aabb","abcd","bac","aabc"] )
 Counting( ["aabb","ab","ba"] )
@@ -43,15 +32,6 @@ print(arrange)
     print(out)
     print('*****************************')
 '''
-
-
-
-
-
-
-
-
-
 
 
 
