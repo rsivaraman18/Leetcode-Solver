@@ -41,19 +41,6 @@ sortsentence( "Myself2 Me1 I4 and3" )
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 Q1
 Input: s = "is2 sentence4 This1 a3"
