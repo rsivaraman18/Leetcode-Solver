@@ -1,4 +1,3 @@
-# ()
 ''' 1935. Maximum Number of Words You Can Type '''
 ''' 1 testcase error '''
 def maxword(text,brokenLetters):
