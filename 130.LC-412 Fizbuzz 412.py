@@ -1,4 +1,3 @@
-#  ( )
 ''' 412: Time 97.26%, Solution with step by step explanation '''
 
 def fizzbuzz(n):
@@ -16,10 +15,6 @@ def fizzbuzz(n):
     print('********************')
             
             
-    
-
-
-
 
 fizzbuzz(3)
 fizzbuzz(5)
