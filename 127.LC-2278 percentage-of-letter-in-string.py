@@ -1,4 +1,3 @@
-# ()
 ''' 2278 percentage-of-letter-in-string '''
 def percentage(s,letter):
     import math
