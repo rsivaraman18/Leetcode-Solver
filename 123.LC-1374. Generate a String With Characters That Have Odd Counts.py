@@ -1,4 +1,3 @@
-
 '''1374. Generate a String With Characters That Have Odd Counts'''
 
 def oddword(n):
