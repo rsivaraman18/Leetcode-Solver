@@ -1,5 +1,4 @@
 '''2351. First Letter to Appear Twice'''
-# ()
 
 '''
 Input: s = "abccbaacz"
