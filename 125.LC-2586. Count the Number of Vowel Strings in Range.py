@@ -1,5 +1,4 @@
 ''' 2586. Count the Number of Vowel Strings in Range    '''
-# ()
 
 def vowel(words,left,right):
     vowels = ['a','e','i','o','u','A','E','I','O','U']
