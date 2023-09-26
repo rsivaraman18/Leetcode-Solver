@@ -57,9 +57,6 @@ Find - if letter finded in a word return index.
 
 
 
-
-
-
 '''
 Input: text = "hello world", brokenLetters = "ad"
 Output: 1
