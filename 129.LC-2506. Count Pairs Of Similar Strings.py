@@ -34,7 +34,6 @@ print(arrange)
 '''
 
 
-
 '''
 You are given a 0-indexed string array words.
 
