@@ -60,11 +60,6 @@ equalcount( ["bnxlsegsjuolplomobehxgc","zsjemxuomdjgfix","z","nskdrbvqxdxlidnvph
 
 
 
-
-
-
-
-
 '''
 Input: words1 = ["leetcode","is","amazing","as","is"], words2 = ["amazing","leetcode","is"]
 Output: 2
