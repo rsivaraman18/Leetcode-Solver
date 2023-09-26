@@ -21,7 +21,6 @@ percentage("sgawtb" ,"s")
 
 
 
-
 '''
 Input: s = "foobar", letter = "o"
 Output: 33
