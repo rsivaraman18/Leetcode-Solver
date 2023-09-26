@@ -11,7 +11,7 @@ def percentage(s,letter):
     print('****************')
 
 
-    
+
 
 
 percentage(s = "foobar", letter = "o")
