@@ -1,4 +1,3 @@
-#  ( )
 ''' 1876. Substrings of Size Three with Distinct Characters  '''
 
 def dist(s ):
