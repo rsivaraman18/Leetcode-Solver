@@ -15,7 +15,8 @@ def substring(s):
         else:
             result.append(each)
     print(len(result))
-            
+
+
 
 '''
 Input: s = "xyzzaz"
