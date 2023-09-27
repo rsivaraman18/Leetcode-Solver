@@ -18,14 +18,6 @@ def shortdist(s,c):
         stdist.append(min(small))
     print(stdist)
         
-        
-            
-        
-    
-            
-        
-
-
 
 shortdist("loveleetcode",'e')
 shortdist("aaab",'b')
