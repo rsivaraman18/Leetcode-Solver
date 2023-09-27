@@ -1,6 +1,5 @@
 '''  1876. Substrings of Size Three with Distinct Characters  '''
 
-# ()
 def substring(s):
     mylist = [ ]
     for i in range(0,len(s)):
