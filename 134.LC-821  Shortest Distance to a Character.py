@@ -1,10 +1,5 @@
-'''
-821. Shortest Distance to a Character
+''' 821. Shortest Distance to a Character '''
 
-'''
-
-
- 
 def shortdist(s,c):
     check = [ ]
     
