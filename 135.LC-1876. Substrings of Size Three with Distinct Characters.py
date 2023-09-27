@@ -31,16 +31,6 @@ Explanation: There are 7 substrings of size 3: "aab", "aba", "bab", "abc", "bca"
 The good substrings are "abc", "bca", "cab", and "abc".
 '''
 
-        
-        
-        
-            
-    
-            
-                
-
-
-
 
 substring( "xyzzaz")
 substring( "aababcabc")
