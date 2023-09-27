@@ -1,5 +1,3 @@
-#  ( )
-# 97   122
 ''' 2399. Check Distances Between Same Letters '''
 
 def distance(s,distance):
