@@ -1,5 +1,3 @@
-# ()
-# print()
 ''' 657. Robot Return to Origin '''
 def judgeCircle(moves):
     d = {'D':0,'U':0,'L':0,'R':0}
