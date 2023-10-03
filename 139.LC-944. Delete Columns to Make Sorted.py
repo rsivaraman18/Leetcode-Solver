@@ -1,5 +1,3 @@
-# ()
-# print()
 ''' 944. Delete Columns to Make Sorted  '''
 
 def deletecol(strs):
