@@ -1,6 +1,5 @@
-# ()
-''' 2053	
-Kth Distinct String in an Array  '''
+''' 2053	Kth Distinct String in an Array  '''
+
 def kdistinct(arr,k):
     d = { }
     for i in arr:
