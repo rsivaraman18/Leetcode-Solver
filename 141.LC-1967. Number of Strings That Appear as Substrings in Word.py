@@ -1,9 +1,5 @@
-'''
-1967. Number of Strings That Appear as Substrings in Word
-Easy
-565
-30
-Companies
+''' 1967. Number of Strings That Appear as Substrings in Word
+
 Given an array of strings patterns and a string word, return the number of strings in patterns that exist as a substring in word.
 
 A substring is a contiguous sequence of characters within a string.
@@ -23,10 +19,6 @@ def compare(patterns,word):
 compare(["a","abc","bc","d"], word = "abc")
 compare(["a","b","c"], word = "aaaaabbbbb")
 compare(["a","a","a"], word = "ab")
-
-
-
-
 
 
 
