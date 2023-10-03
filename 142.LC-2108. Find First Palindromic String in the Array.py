@@ -1,4 +1,4 @@
-''' 2108. Find First Palindromic String in the Array '''
+ ''' 2108. Find First Palindromic String in the Array '''
 
 def palindrome(words):
     for each in words:
