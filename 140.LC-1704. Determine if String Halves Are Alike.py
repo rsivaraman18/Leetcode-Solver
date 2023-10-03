@@ -30,36 +30,7 @@ vowels("textbook")
 
 
 
-'''
-
-
-    #lword = s[0:2]
-    #rword = s[2:4]
     
-    
-
-    '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 '''
 Input: s = "book"
