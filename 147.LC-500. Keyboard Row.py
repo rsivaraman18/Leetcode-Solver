@@ -28,9 +28,7 @@ def keyboard(words):
     
 keyboard(["Hello","Alaska","Dad","Peace"])
         
-
-
-                
+             
 '''
 
 keyboard( ["Hello","Alaska","Dad","Peace"])
