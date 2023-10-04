@@ -15,7 +15,6 @@ def truncate(s,k):
     print('********')
     
 
-
 truncate( "Hello how are you Contestant", k = 4)
     
 truncate(  "What is the solution to this problem", k = 4 )
