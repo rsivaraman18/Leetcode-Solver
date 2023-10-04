@@ -16,19 +16,9 @@ def characters(words,chars):
         result = result + len(each)
     print(result)
         
-            
-            
-                
-
-
-
 
 characters(words = ["cat","bt","hat","tree"], chars = "atach")
 characters( ["hello","world","leetcode"], chars = "welldonehoneyr" )
-
-
-
-
 
 
 '''
