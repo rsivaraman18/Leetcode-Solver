@@ -23,8 +23,6 @@ def goal(command):
                 
     print('Result',out)
     print('***')
-                
-                
             
 #goal( "G()(al)" )
 goal('G()()()()(al)')
