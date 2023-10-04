@@ -14,16 +14,11 @@ def revsolution1(s):
         l=l+1
         r=r-1
     res =  ''.join(s)
-    print(res)
-
-        
-            
-    
-            
-            
+    print(res)       
 
 revsolution1(s ="a-bC-dEf-ghIj")
 revsolution1("Test1ng-Leet=code-Q!")
+
 print('**************************')
 
 def revsolution2(s):
@@ -46,17 +41,5 @@ def revsolution2(s):
     print(res)
 
 
-
-
 revsolution2( "a-bC-dEf-ghIj")
 revsolution2( "Test1ng-Leet=code-Q!")
-
-
-
-
-
-
-
-
-
-
