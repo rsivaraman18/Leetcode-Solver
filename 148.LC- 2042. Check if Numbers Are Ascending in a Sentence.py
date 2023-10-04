@@ -21,9 +21,7 @@ def incnum(s):
             
             
     print(flag)
-        
-        
-        
+            
 
 #incnum(s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles")
 #incnum(s ="hello world 5 x 5")
