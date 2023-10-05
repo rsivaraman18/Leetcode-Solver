@@ -32,17 +32,9 @@ def ballonnum(text):
     no_of_ballons = ballons.count(target)
     print(no_of_ballons)
                 
-            
-            
-
 
 #ballonnum( "nlaebolkonlaebolko")
 #ballonnum("ballon")
-
-
-
-
-
 
 def solution2(text):
     from collections import Counter
@@ -56,16 +48,4 @@ def solution2(text):
 
 
 solution2("nlaebolkonlaebolko")
-
-
-
-
-
-
-
-
-
-
-
-
 
