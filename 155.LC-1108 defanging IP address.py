@@ -9,7 +9,5 @@ def defanging(address):
             new = new + char
     print(new)
             
-
-
 defanging("1.1.1.1" ) #"1[.]1[.]1[.]1"
 defanging( "255.100.50.0")
