@@ -11,7 +11,5 @@ def jewel(jewels,stones):
         jsum = jsum + num
     print(jsum)
         
-
-
 jewel("aA", stones = "aAAbbbb")
 jewel("z", stones = "ZZ")
