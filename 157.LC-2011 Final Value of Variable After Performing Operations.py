@@ -12,9 +12,6 @@ def finvalue(operation):
         else:
             print('Error')
     print(count)
-        
-    
-
 
 
 finvalue(["--X","X++","X++"])
@@ -30,4 +27,4 @@ count = 0
             count = count -1
     print('count',count)
 
-            '''
+'''
