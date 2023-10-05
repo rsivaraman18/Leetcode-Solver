@@ -24,7 +24,6 @@ def sumofdigit(s,k):
     print(tot)        
         
 
-
 def solution2(s,k):
     string = ""
     for char in s:
