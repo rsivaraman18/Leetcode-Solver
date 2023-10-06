@@ -11,8 +11,6 @@ def decode(key,message):
     print(noduplicate)
 
 
-
-
 key = "the quick brown fox jumps over the lazy dog",
 message = "vkbs bs t suepuv"
 decode(key,message)
