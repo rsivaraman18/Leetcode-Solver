@@ -10,7 +10,7 @@ def decode(key,message):
             noduplicate.append(i)
     print(noduplicate)
 
-
+ 
 
 key = "the quick brown fox jumps over the lazy dog",
 message = "vkbs bs t suepuv"
