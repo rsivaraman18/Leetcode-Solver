@@ -9,8 +9,6 @@ def decode(key,message):
         if i not in noduplicate:
             noduplicate.append(i)
     print(noduplicate)
-    
-
 
 
 
