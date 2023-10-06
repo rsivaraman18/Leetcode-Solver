@@ -12,6 +12,6 @@ def phone(number):
             
     print(newphone)
 
-  
+   
 
 phone(number = "1-23-45 6")
