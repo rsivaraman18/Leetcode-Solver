@@ -1,5 +1,4 @@
 ''' 541. Reverse String II '''
-
 ''' Output: "bacdfeg" '''
 
 def rev_word(s,k):
@@ -17,13 +16,6 @@ def rev_word(s,k):
             res += reverse[::-1]
     return(res)
         
-        
-    
-        
-
-
-
-
 rev_word("abcdefg", 2)
 rev_word("abcd", 2)
 
