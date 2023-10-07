@@ -10,7 +10,6 @@ def check(items,ruleKey,ruleValue):
     print('count',count)
 
 
-
 check(items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]],
       ruleKey = "color", ruleValue = "silver")
 check(items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]],
