@@ -11,12 +11,6 @@ def Keyboard(s):
         else:
             result = result[::-1]
     return result
-    
-        
-
-
-
 
 Keyboard('string')
-
 Keyboard('poiinter')
