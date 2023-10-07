@@ -11,8 +11,6 @@ def find_word(sentence,searchWord):
             print( i+1)
     return(-1)
     
-    
-    
 
 
 find_word("i love eating burg" , 'burg')
