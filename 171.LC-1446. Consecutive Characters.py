@@ -7,7 +7,7 @@ def maxPower(s):
         else:
             box = box + ' ' + letter
     result = box.split()
-    print(result)
+    print(result) 
     
     max_length_word = max(result, key=len) # Important step 
     max_length = len(max_length_word)
