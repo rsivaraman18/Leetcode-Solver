@@ -13,7 +13,7 @@ def maxPower(s):
     max_length = len(max_length_word)
     print(max_length)
 
-    
+     
 
 maxPower( s = "leetcode")
 maxPower( s = "abbcccddddeeeeedcba")
