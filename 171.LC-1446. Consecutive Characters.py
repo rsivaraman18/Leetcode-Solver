@@ -4,7 +4,7 @@ def maxPower(s):
     for letter in s:
         if letter == box[-1]:
             box +=letter
-        else:
+        else: 
             box = box + ' ' + letter
     result = box.split()
     print(result)  
