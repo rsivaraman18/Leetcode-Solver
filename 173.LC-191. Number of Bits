@@ -1,5 +1,5 @@
 # 191-prgm:No of Bits
- 
+  
 def program(n):
     result = ''
     while (n!=1):
