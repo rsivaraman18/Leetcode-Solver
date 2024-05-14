@@ -1,5 +1,5 @@
 # 176.LC-507.Perfect Number.py
-
+ 
 # def program(num):
 #     result = []
 #     for i in range(1,num):
