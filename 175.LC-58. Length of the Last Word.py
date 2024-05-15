@@ -17,7 +17,7 @@
 # Output: 6
 # Explanation: The last word is "joyboy" with length 6.
 
-
+ 
 
 
 def program(s):
