@@ -1,6 +1,6 @@
 # 175.LC-58. Length of the Last Word.py
  
-    
+     
 # Example 1:
 
 # Input: s = "Hello World"
