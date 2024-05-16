@@ -1,4 +1,4 @@
-# 176.LC-507.Perfect Number.py
+ # 176.LC-507.Perfect Number.py
  
 # def program(num):
 #     result = []
