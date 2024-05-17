@@ -29,7 +29,7 @@ def program(num):
     else:
         print('False')
         return False
-
+ 
 
 program(28)
 program(7)
