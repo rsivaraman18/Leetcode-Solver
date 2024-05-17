@@ -16,7 +16,7 @@
 # program(28)
 # program(7)
  
- 
+
  
 def program(num):
     total = 0
