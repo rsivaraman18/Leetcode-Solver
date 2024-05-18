@@ -1,5 +1,5 @@
 # 175.LC-58. Length of the Last Word.py
-     
+      
 # Input: s = "Hello World"
 # Output: 5
 # Explanation: The last word is "World" with length 5.
