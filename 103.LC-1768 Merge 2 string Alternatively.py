@@ -53,3 +53,18 @@ def mer():
             res = res + b[i]
     print(res)
 mer()
+
+#******************************
+
+def mergefun(w1,w2):
+    max = len(w1) if len(w1) > len(w2) else len(w2)
+    result=''
+    for i in range(max):   
+        if i<len(w1):
+            result += w1[i]
+        if i<len(w2):
+            result += w2[i]
+    print('Result',result)
+mergefun('abc','pqr')
+mergefun('ab','pqrs')
+##############################
