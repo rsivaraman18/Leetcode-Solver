@@ -51,7 +51,7 @@ def main():
                     print(f'Failed to push the file: {filename}')
                     print(push_result.stderr)
         
-            waiting_time = 300
+            waiting_time = 900
             
             print(f'Next Git status will be checked after  {int(waiting_time)/60} minutes ')
 
