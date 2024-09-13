@@ -38,7 +38,7 @@ def main():
                 print('Failed to commit changes.')
                 print(commit_result.stderr)
         else:
-            print('No file to commit.')
+            print('No file to commit,so lets sleep for 30 minutes')
             # Wait for 30 minutes before checking the status again
             time.sleep(1800)
             continue
