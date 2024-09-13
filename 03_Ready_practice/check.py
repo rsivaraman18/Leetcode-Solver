@@ -1,18 +1,18 @@
 #Example 1 : 
 
-def add_sprinkles(func):
-    def wrapper():
-        print("You added sprinkles")
-        func()
-    print('Outer Ends here')
-    return wrapper
+# def add_sprinkles(func):
+#     def wrapper():
+#         print("You added sprinkles")
+#         func()
+#     print('Outer Ends here')
+#     return wrapper
 
 
-@add_sprinkles
-def get_icecream():
-    print("Here is your icecream")
+# @add_sprinkles
+# def get_icecream():
+#     print("Here is your icecream")
 
-get_icecream()
+# get_icecream()
 
 
 ####################################
@@ -29,6 +29,8 @@ get_icecream()
 #     print("Here is your icecream")
 
 # get_icecream
+
+
 
 ####################################
 # Example3:
@@ -103,6 +105,26 @@ get_icecream()
 
 # # Output: I am ordinary
 
+
+####################
+# Example 5:
+def smart_divide(func):
+    def inner(a, b):
+        print("I am going to divide", a, "and", b)
+        if b == 0:
+            print("Whoops! cannot divide")
+            return
+
+        return func(a, b)
+    return inner
+
+@smart_divide
+def divide(a, b):
+    print(a/b)
+
+divide(2,5)
+
+divide(2,0)
 
 
 
