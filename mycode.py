@@ -52,7 +52,7 @@ def main():
                     print(push_result.stderr)
         
             # Wait for 1 minute before checking the status again
-            time.sleep(10)
+            time.sleep(300)
         else:
             # No files to commit
             print('Rest for 30 mins ....')
