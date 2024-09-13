@@ -108,23 +108,49 @@
 
 ####################
 # Example 5:
-def smart_divide(func):
-    def inner(a, b):
-        print("I am going to divide", a, "and", b)
-        if b == 0:
-            print("Whoops! cannot divide")
-            return
+# def smart_divide(func):
+#     def inner(a, b):
+#         print("I am going to divide", a, "and", b)
+#         if b == 0:
+#             print("Whoops! cannot divide")
+#             return
 
-        return func(a, b)
+#         return func(a, b)
+#     return inner
+
+# @smart_divide
+# def divide(a, b):
+#     print(a/b)
+
+# divide(2,5)
+
+# divide(2,0)
+
+
+########### Example 7
+
+def star(func):
+    def inner(*args, **kwargs):
+        print("*" * 15)
+        func(*args, **kwargs)
+        print("*" * 15)
     return inner
 
-@smart_divide
-def divide(a, b):
-    print(a/b)
 
-divide(2,5)
+def percent(func):
+    def inner(*args, **kwargs):
+        print("%" * 15)
+        func(*args, **kwargs)
+        print("%" * 15)
+    return inner
 
-divide(2,0)
+
+@star
+@percent
+def printer(msg):
+    print(msg)
+
+printer("Hello")
 
 
 
