@@ -1,4 +1,3 @@
-import os
 import subprocess
 import time
 
@@ -23,9 +22,13 @@ def main():
         status_output = result.stdout.strip()
         
         if status_output:
-            # Get the first untracked or modified file
+            # Parse the status output to get the list of files
             files = [line.split()[1] for line in status_output.splitlines()]
             if files:
+                # Print the list of files
+                print(f'Files detected for status update: {files}')
+                
+                # Process the first file
                 filename = files[0]
                 
                 # Add the file
@@ -42,10 +45,14 @@ def main():
                     print(f'Failed to push the file: {filename}')
                     print(push_result.stderr)
         
-        # Wait for 1 minute before checking the status again
-        time.sleep(60)
+            # Wait for 1 minute before checking the status again
+            time.sleep(60)
+        else:
+            # No files to commit
+            print('Rest for 30 mins.')
+            time.sleep(1800)  # Sleep for 30 minutes
 
 if __name__ == "__main__":
     main()
 
-
+print('Super')
