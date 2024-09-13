@@ -1,18 +1,18 @@
 #Example 1 : 
 
-# def add_sprinkles(func):
-#     def wrapper():
-#         print("You added sprinkles")
-#         func()
-#     print('Outer Ends here')
-#     return wrapper
+def add_sprinkles(func):
+    def wrapper():
+        print("You added sprinkles")
+        func()
+    print('Outer Ends here')
+    return wrapper
 
 
-# @add_sprinkles
-# def get_icecream():
-#     print("Here is your icecream")
+@add_sprinkles
+def get_icecream():
+    print("Here is your icecream")
 
-# get_icecream
+get_icecream
 
 
 ####################################
@@ -91,17 +91,17 @@
 
 #################
 # Example 6
-def make_pretty(func):
-    def inner():
-        print("I got decorated")
-        func()
-    return inner
+# def make_pretty(func):
+#     def inner():
+#         print("I got decorated")
+#         func()
+#     return inner
 
 
-def ordinary():
-    print("I am ordinary")
+# def ordinary():
+#     print("I am ordinary")
 
-# Output: I am ordinary
+# # Output: I am ordinary
 
 
 
