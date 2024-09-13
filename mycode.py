@@ -51,12 +51,13 @@ def main():
                     print(f'Failed to push the file: {filename}')
                     print(push_result.stderr)
         
-            # Wait for 1 minute before checking the status again
-            time.sleep(300)
+            waiting_time = 300
+            print('Now I will be waiting for {waiting_time} seconds')
+            time.sleep(waiting_time)
         else:
-            # No files to commit
-            print('Rest for 30 mins ....')
-            time.sleep(1800)  # Sleep for 30 minutes
+            rest_time = 900
+            print('No Untracked or Modified Files Found. So Let me take Rest for ', int(rest_time)/60 ,'minutes')
+            time.sleep(rest_time) 
 
 
 if __name__ == "__main__":
