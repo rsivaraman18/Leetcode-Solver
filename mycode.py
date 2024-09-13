@@ -46,11 +46,11 @@ def main():
                     print(push_result.stderr)
         
             # Wait for 1 minute before checking the status again
-            time.sleep(60)
+            time.sleep(1800)
         else:
             # No files to commit
-            print('Rest for 30 mins.')
-            time.sleep(1800)  # Sleep for 30 minutes
+            print('Rest for 1 hour.')
+            time.sleep(3600)  # Sleep for 30 minutes
 
 if __name__ == "__main__":
     main()
