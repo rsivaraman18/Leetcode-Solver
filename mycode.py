@@ -52,12 +52,13 @@ def main():
                     print(push_result.stderr)
         
             waiting_time = 300
-            print(f'I will be waiting for {int(waiting_time)/60} minutes ,to make next git status check ...')
+            
+            print(f'Next Git status will be checked after  {int(waiting_time)/60} minutes ')
 
             time.sleep(waiting_time)
         else:
             rest_time = 900
-            print(f'No Untracked or Modified Files Found. So Let me take Rest for {int(rest_time)/60} minutes')
+            print(f'No Untracked or Modified Files Found. \n So Let me take Rest for {int(rest_time)/60} minutes')
             time.sleep(rest_time) 
 
 
