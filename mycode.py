@@ -5,14 +5,12 @@ import time
 # Define the Git commands
 commands = {
     'status': 'git status --porcelain',
-    'add': 'git add {filename}',
+    'add': 'git add .',
     'commit': 'git commit -m "Program Solved"',
     'push': 'git push origin main'
 }
 
-def run_command(command, filename=None):
-    if filename:
-        command = command.format(filename=filename)
+def run_command(command):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     return result
 
@@ -23,29 +21,30 @@ def main():
         status_output = result.stdout.strip()
         
         if status_output:
-            # Get the first untracked or modified file
-            files = [line.split()[1] for line in status_output.splitlines()]
-            if files:
-                filename = files[0]
-                
-                # Add the file
-                run_command(commands['add'], filename)
-                
-                # Commit the changes
-                run_command(commands['commit'])
-                
+            # Add all changes (including new files and folders)
+            run_command(commands['add'])
+            
+            # Commit the changes
+            commit_result = run_command(commands['commit'])
+            if commit_result.returncode == 0:
                 # Push the changes
                 push_result = run_command(commands['push'])
                 if push_result.returncode == 0:
-                    print(f'Successfully pushed the file: {filename}')
+                    print('Successfully pushed the changes.')
                 else:
-                    print(f'Failed to push the file: {filename}')
+                    print('Failed to push the changes.')
                     print(push_result.stderr)
+            else:
+                print('Failed to commit changes.')
+                print(commit_result.stderr)
+        else:
+            print('No file to commit.')
+            # Wait for 30 minutes before checking the status again
+            time.sleep(1800)
+            continue
         
         # Wait for 1 minute before checking the status again
         time.sleep(60)
 
 if __name__ == "__main__":
     main()
-
-
