@@ -131,17 +131,19 @@
 
 def star(func):
     def inner(*args, **kwargs):
-        print("*" * 15)
+        print(11111111)
         func(*args, **kwargs)
-        print("*" * 15)
+        print(2222222)
+    print('star 1')
     return inner
 
 
 def percent(func):
     def inner(*args, **kwargs):
-        print("%" * 15)
+        print(3333333)
         func(*args, **kwargs)
-        print("%" * 15)
+        print(444444)
+    print('percent 2')
     return inner
 
 
