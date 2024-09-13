@@ -55,8 +55,9 @@ def main():
             time.sleep(10)
         else:
             # No files to commit
-            print('Rest for 30 mins.')
+            print('Rest for 30 mins ....')
             time.sleep(1800)  # Sleep for 30 minutes
+
 
 if __name__ == "__main__":
     main()
