@@ -33,61 +33,75 @@
 ####################################
 # Example3:
 
-def add_sprinkles(func):
-    def wrapper():
-        print("You added sprinkles")
-        func()
-    print('Outer1 Ends here')
-    return wrapper
+# def add_sprinkles(func):
+#     def wrapper():
+#         print("You added sprinkles")
+#         func()
+#     print('Outer1 Ends here')
+#     return wrapper
 
 
-def add_choculates(func):
-    def wrapper():
-        print("You added choculates")
-        func()
-    print('Outer2 Ends here')
-    return wrapper
+# def add_choculates(func):
+#     def wrapper():
+#         print("You added choculates")
+#         func()
+#     print('Outer2 Ends here')
+#     return wrapper
 
 
 
 
 
-@add_sprinkles
-@add_choculates
-def get_icecream():
-    print("Here is your icecream")
+# @add_sprinkles
+# @add_choculates
+# def get_icecream():
+#     print("Here is your icecream")
 
-get_icecream()
+# get_icecream()
 
 
 ######################
 # EG4
 
-def add_sprinkles(func):
-    def wrapper(*args):
-        print("You added sprinkles")
-        func(*args)
-    print('Outer1 Ends here')
-    return wrapper
+# def add_sprinkles(func):
+#     def wrapper(*args):
+#         print("You added sprinkles")
+#         func(*args)
+#     print('Outer1 Ends here')
+#     return wrapper
 
 
-def add_choculates(func):
-    def wrapper(*args):
-        print("You added choculates")
-        func(*args)
-    print('Outer2 Ends here')
-    return wrapper
+# def add_choculates(func):
+#     def wrapper(*args):
+#         print("You added choculates")
+#         func(*args)
+#     print('Outer2 Ends here')
+#     return wrapper
 
 
 
 
 
-@add_sprinkles
-@add_choculates
-def get_icecream(flavour):
-    print(f"Here is your {flavour} icecream")
+# @add_sprinkles
+# @add_choculates
+# def get_icecream(flavour):
+#     print(f"Here is your {flavour} icecream")
 
-get_icecream("Vanilla")
+# get_icecream("Vanilla")
+
+#################
+# Example 6
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+
+
+def ordinary():
+    print("I am ordinary")
+
+# Output: I am ordinary
 
 
 
