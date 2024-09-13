@@ -1,5 +1,6 @@
 import subprocess
 import time
+import re
 
 # Define the Git commands
 commands = {
@@ -15,6 +16,11 @@ def run_command(command, filename=None):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     return result
 
+def parse_git_status(status_output):
+    # Use regex to match file paths, including those with spaces
+    pattern = r'^[ MADRCU?]{1,2} (.+)$'
+    return re.findall(pattern, status_output, re.MULTILINE)
+
 def main():
     while True:
         # Check the status of the Git repository
@@ -23,7 +29,7 @@ def main():
         
         if status_output:
             # Parse the status output to get the list of files
-            files = [line.split()[1] for line in status_output.splitlines()]
+            files = parse_git_status(status_output)
             if files:
                 # Print the list of files
                 print(f'Files detected for status update: {files}')
@@ -46,13 +52,11 @@ def main():
                     print(push_result.stderr)
         
             # Wait for 1 minute before checking the status again
-            time.sleep(1800)
+            time.sleep(10)
         else:
             # No files to commit
-            print('Rest for 1 hour.')
-            time.sleep(3600)  # Sleep for 30 minutes
+            print('Rest for 30 mins.')
+            time.sleep(1800)  # Sleep for 30 minutes
 
 if __name__ == "__main__":
     main()
-
-print('Super')
