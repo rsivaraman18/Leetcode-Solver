@@ -12,7 +12,7 @@ def add_sprinkles(func):
 def get_icecream():
     print("Here is your icecream")
 
-get_icecream
+get_icecream()
 
 
 ####################################
