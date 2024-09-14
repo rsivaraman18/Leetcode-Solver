@@ -185,6 +185,10 @@
 
 ######### Example 9
 
+def hello():
+    ...
+    def inner():
+        ...
 
 
 
