@@ -185,11 +185,22 @@
 
 ######### Example 9
 
-def hello():
-    ...
-    def inner():
-        ...
+# def hello():
+#     ...
+#     def inner():
+#         ...
 
 
+traffic_color = ["GREEN","YELLOW","RED"]
+def is_valid_color(usercolor):
+    if usercolor.lower() in list(map(str.lower,traffic_color)):
+        return True
+
+usercolor = "YEllOw"
+result = is_valid_color(usercolor)
+if result:
+    print(f"You have choosen the right color '{usercolor}' ")
+else:
+    print(f"{usercolor} is not a valid Traffic Color")
 
  
