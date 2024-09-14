@@ -177,11 +177,14 @@
 # # Output: 30
 # print(times5(times3(2)))
 
+### Example 8
+# def greet(name):
+#     return f"Hello & Welcome {name}"
 
-def greet(name):
-    return f"Hello & Welcome {name}"
+# gm = greet("Python")
 
-gm = greet("Python")
+######### Example 9
+
 
 
 
