@@ -222,5 +222,5 @@ class Subjects:
 
 
 student = Subjects
-student.maths()
+student.maths() 
 
