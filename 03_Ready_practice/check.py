@@ -129,31 +129,59 @@
 
 ########### Example 7
 
-def star(func):
-    def inner(*args, **kwargs):
-        print(11111111)
-        func(*args, **kwargs)
-        print(2222222)
-    print('star 1')
-    return inner
+# def star(func):
+#     def inner(*args, **kwargs):
+#         print(11111111)
+#         func(*args, **kwargs)
+#         print(2222222)
+#     print('star 1')
+#     return inner
 
 
-def percent(func):
-    def inner(*args, **kwargs):
-        print(3333333)
-        func(*args, **kwargs)
-        print(444444)
-    print('percent 2')
-    return inner
+# def percent(func):
+#     def inner(*args, **kwargs):
+#         print(3333333)
+#         func(*args, **kwargs)
+#         print(444444)
+#     print('percent 2')
+#     return inner
 
 
-@star
-@percent
-def printer(msg):
-    print(msg)
+# @star
+# @percent
+# def printer(msg):
+#     print(msg)
 
-printer("Hello")
+# printer("Hello")
 
+
+##### Example 7
+# def make_multiplier_of(n):
+#     def multiplier(x):
+#         return x * n
+#     return multiplier
+
+
+# # Multiplier of 3
+# times3 = make_multiplier_of(3)
+
+# # Multiplier of 5
+# times5 = make_multiplier_of(5)
+
+# # Output: 27
+# print(times3(9))
+
+# # Output: 15
+# print(times5(3))
+
+# # Output: 30
+# print(times5(times3(2)))
+
+
+def greet(name):
+    return f"Hello & Welcome {name}"
+
+gm = greet("Python")
 
 
 
