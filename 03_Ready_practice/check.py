@@ -190,17 +190,37 @@
 #     def inner():
 #         ...
 
+############# Example 10
 
-traffic_color = ["GREEN","YELLOW","RED"]
-def is_valid_color(usercolor):
-    if usercolor.lower() in list(map(str.lower,traffic_color)):
-        return True
+# traffic_color = ["GREEN","YELLOW","RED"]
+# def is_valid_color(usercolor):
+#     if usercolor.lower() in list(map(str.lower,traffic_color)):
+#         return True
 
-usercolor = "YEllOw"
-result = is_valid_color(usercolor)
-if result:
-    print(f"You have choosen the right color '{usercolor}' ")
-else:
-    print(f"{usercolor} is not a valid Traffic Color")
+# usercolor = "YEllOw"
+# result = is_valid_color(usercolor)
+# if result:
+#     print(f"You have choosen the right color '{usercolor}' ")
+# else:
+#     print(f"{usercolor} is not a valid Traffic Color")
 
- 
+################## Example 11
+
+class Subjects:
+
+    def maths():
+        print("Calculation Involved")
+    
+    def tamil():
+        print("Language to communicate")
+
+    def science():
+        print("Understand the Natures Effect")
+    
+    def social():
+        print("Learn the History !!!")
+
+
+student = Subjects
+student.maths()
+
