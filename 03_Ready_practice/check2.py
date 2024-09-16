@@ -22,7 +22,8 @@ class Greet:
 obj = Greet("Siva")
 print(obj.wish())
 
-print(dir())
+# print(dir())
+print('Check2:',__name__)
 
 
 
