@@ -40,6 +40,7 @@ f = lambda x : bool(x%2)
 print(f(3),f(1))  ### True True
 
 for i in range(len(l)):
+    
     if f(l[i]):
         del l[i]
         print(i)
