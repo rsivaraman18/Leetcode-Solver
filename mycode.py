@@ -1,6 +1,7 @@
 import subprocess
 import time
 import re
+from datetime import datetime, timedelta
 
 # Define the Git commands
 commands = {
@@ -23,6 +24,9 @@ def parse_git_status(status_output):
 
 def main():
     while True:
+        # Get the current time
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
         # Check the status of the Git repository
         result = run_command(commands['status'])
         status_output = result.stdout.strip()
@@ -32,7 +36,7 @@ def main():
             files = parse_git_status(status_output)
             if files:
                 # Print the list of files
-                print(f'Files detected for status update: {files}')
+                print(f'[{current_time}] Files detected for status update: {files}')
                 
                 # Process the first file
                 filename = files[0]
@@ -46,21 +50,29 @@ def main():
                 # Push the changes
                 push_result = run_command(commands['push'])
                 if push_result.returncode == 0:
-                    print(f'Successfully pushed the file: {filename}')
+                    print(f'Successfully pushed the file: {filename} at {current_time}')
                 else:
                     print(f'Failed to push the file: {filename}')
                     print(push_result.stderr)
         
-            waiting_time = 900
+            # Set the waiting time (e.g., 15 minutes = 900 seconds)
+            waiting_time = 900  # 15 minutes in seconds
             
-            print(f'Next Git status will be checked after  {int(waiting_time)/60} minutes ')
-
+            next_check_time = (datetime.now() + timedelta(seconds=waiting_time)).strftime("%Y-%m-%d %H:%M:%S")
+            print(f'Next Git status will be checked after {int(waiting_time / 60)} minutes at {next_check_time}')
+            
+            # Sleep for the specified time
             time.sleep(waiting_time)
         else:
-            rest_time = 900
-            print(f'No Untracked or Modified Files Found. \n So Let me take Rest for {int(rest_time)/60} minutes')
-            time.sleep(rest_time) 
-
+            # If no files are untracked or modified, rest for a set amount of time
+            rest_time = 900  # 15 minutes in seconds
+            print(f'[{current_time}] No Untracked or Modified Files Found. Resting for {int(rest_time / 60)} minutes.')
+            
+            next_check_time = (datetime.now() + timedelta(seconds=rest_time)).strftime("%Y-%m-%d %H:%M:%S")
+            print(f'Next Git status will be checked at {next_check_time}')
+            
+            # Sleep for the rest time
+            time.sleep(rest_time)
 
 if __name__ == "__main__":
     main()
