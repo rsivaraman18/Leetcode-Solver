@@ -56,7 +56,7 @@ def main():
                     print(push_result.stderr)
         
             # Set the waiting time (e.g., 15 minutes = 900 seconds)
-            waiting_time = 900  # 15 minutes in seconds
+            waiting_time = 1800  # 30 minutes in seconds
             
             next_check_time = (datetime.now() + timedelta(seconds=waiting_time)).strftime("%Y-%m-%d %H:%M:%S")
             print(f'Next Git status will be checked after {int(waiting_time / 60)} minutes at {next_check_time}')
