@@ -40,5 +40,16 @@ print(m)
 
 
 """ Hello functools"""
-print(__doc__)
-print(dir())
+# print(__doc__)
+
+def caller():
+    "sadsad"
+# print(dir())
+print(__doc__) 
+
+"""
+This module demonstrates the use of __doc__.
+"""
+import pandas as pd
+print(__doc__)  # Prints the module-level docstring
+print(__package__)
