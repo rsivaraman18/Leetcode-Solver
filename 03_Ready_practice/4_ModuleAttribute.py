@@ -159,4 +159,8 @@ y = 2.8
 # print(math.floor(b))
 
 number = 1999.565565
-print(round(number))
+# print(round(number))
+
+a = ['orange','mango','kiwi','guava','mango','pine','mango']
+b = a.index('mango',2)
+print(b)
