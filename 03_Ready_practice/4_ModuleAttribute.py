@@ -139,4 +139,5 @@ name = "    hello  herterer "
 # d = name.strip()
 # print(len(d))
 
-print(10^5)
+print(40>>2)
+print(12>>2)
