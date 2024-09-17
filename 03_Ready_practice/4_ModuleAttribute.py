@@ -114,12 +114,12 @@
 # obj = MyClass()
 # print(bool(obj))  
 
-class AnotherClass:
-    def __len__(self):
-        pass
+# class AnotherClass:
+#     def __len__(self):
+#         return 0
 
-obj = AnotherClass()
-print(bool(obj))  # Output: False
+# obj = AnotherClass()
+# print(bool(obj))  # Output: False
 
 
 
@@ -131,3 +131,5 @@ print(bool(obj))  # Output: False
 
 # x = Truth()
 # print(bool(x))
+
+print(4&5)
