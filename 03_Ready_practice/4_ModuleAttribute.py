@@ -135,6 +135,8 @@
 # print(4&5)
 
 name = "    hello  herterer "
-print(len(name))
-d = name.strip()
-print(len(d))
+# print(len(name))
+# d = name.strip()
+# print(len(d))
+
+print(10^5)
