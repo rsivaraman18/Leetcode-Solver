@@ -132,4 +132,9 @@
 # x = Truth()
 # print(bool(x))
 
-print(4&5)
+# print(4&5)
+
+name = "    hello  herterer "
+print(len(name))
+d = name.strip()
+print(len(d))
