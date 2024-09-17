@@ -139,5 +139,24 @@ name = "    hello  herterer "
 # d = name.strip()
 # print(len(d))
 
-print(40>>2)
-print(12>>2)
+# print(40>>2)
+# print(12>>2)
+# print(27>>2)
+
+import math
+x = 3.4
+y = 2.8
+# print(math.ceil(x))
+# print(math.ceil(y))
+# print(math.floor(x))
+# print(math.floor(y))
+# a = -3.4
+# b = -2.8
+# print('Math Ceil floor')
+# print(math.ceil(a))
+# print(math.ceil(b))
+# print(math.floor(a))
+# print(math.floor(b))
+
+number = 1999.565565
+print(round(number))
