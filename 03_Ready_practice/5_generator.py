@@ -81,12 +81,16 @@
 # print(next(value))
 # print(next(value))
 
-import sys
-mylist = [1,2,3,4,5,6,7,8,9,10]
-print(sys.getsizeof(mylist))
-print(sys.getsizeof(range(1,11))) 
+# import sys
+# mylist = [1,2,3,4,5,6,7,8,9,10]
+# print(sys.getsizeof(mylist))
+# print(sys.getsizeof(range(1,11))) 
 
-x = map(lambda i :i**2 ,mylist)
-y = list(x)
-print(sys.getsizeof(x))
-print(sys.getsizeof(y))
+# x = map(lambda i :i**2 ,mylist)
+# y = list(x)
+# print(sys.getsizeof(x))
+# print(sys.getsizeof(y))
+
+
+squares_generator = (i * i for i in range(5))
+print(squares_generator)
