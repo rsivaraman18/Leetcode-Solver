@@ -208,6 +208,9 @@ b = a.index('mango',2)
 
 
 
+a = type(0b101)
+print(a)
+
 
 
 
