@@ -66,17 +66,27 @@
 # print(next(numbers))
 # print(next(numbers))
 
-def even_generator():
-    n =0
-    n += 2
-    yield n
-    n += 2
-    yield n
-    n += 2
-    yield n
+# def even_generator():
+#     n =0
+#     n += 2
+#     yield n
+#     n += 2
+#     yield n
+#     n += 2
+#     yield n
 
-value = even_generator()
-print(next(value))
-print(next(value))
-print(next(value))
-print(next(value))
+# value = even_generator()
+# print(next(value))
+# print(next(value))
+# print(next(value))
+# print(next(value))
+
+import sys
+mylist = [1,2,3,4,5,6,7,8,9,10]
+print(sys.getsizeof(mylist))
+print(sys.getsizeof(range(1,11))) 
+
+x = map(lambda i :i**2 ,mylist)
+y = list(x)
+print(sys.getsizeof(x))
+print(sys.getsizeof(y))
