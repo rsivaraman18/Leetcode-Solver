@@ -193,13 +193,21 @@ b = a.index('mango',2)
 # lst = [[3,14],[4,7]]
 # print(sum(lst,5))
 
-a = [2,3,7]
-print(sum(a,[7]))
+# a = [2,3,7]
+# print(sum(a,[7]))
 
 
- 
-     'intersection_update', '',  
-     
+# a = {1,2,3,4}
+# b = {5,2,6,7}
+# c = {5,6,7}
+# d = {1,2}
 
- 'difference', 'difference_update',
-'symmetric_difference', 'symmetric_difference_update',
+
+# print(a.intersection(b))
+# print(a.intersection_update(b))
+
+
+
+
+
+
