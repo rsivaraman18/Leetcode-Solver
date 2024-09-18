@@ -30,6 +30,7 @@
 # print(count_box)
 
 ### Example 4 : Counter
-obj_list = ['siva','python','developer','developer','developer','siva','python','siva','python',]
-counter = counter(obj_list)
-print(counter)
+from collections import Counter
+obj_list = ['siva','python','develope','developer','developer','siva','python','siva','python',]
+counter = Counter(obj_list)
+print('counter',counter)
