@@ -39,30 +39,44 @@
 #         break
 
 
-class Even:
-    def __init__(self,maximum):
-        print("Init Method")
-        self.n = 2
-        self.maximum = maximum
+# class Even:
+#     def __init__(self,maximum):
+#         print("Init Method")
+#         self.n = 2
+#         self.maximum = maximum
     
-    # def __iter__(self):
-    #     print("Iter Method")
-    #     return self
+#     # def __iter__(self):
+#     #     print("Iter Method")
+#     #     return self
 
-    def __next__(self):
-        if self.n <= self.maximum:
-            print("Next if Method")
-            result = self.n
-            self.n += 2
-            return result
+#     def __next__(self):
+#         if self.n <= self.maximum:
+#             print("Next if Method")
+#             result = self.n
+#             self.n += 2
+#             return result
         
-        else:
-            print("Else if Method")
-            raise StopIteration
+#         else:
+#             print("Else if Method")
+#             raise StopIteration
 
-numbers = Even(6)
-print(next(numbers))
-print(next(numbers))
-print(next(numbers))
-print(next(numbers))
+# numbers = Even(6)
+# print(next(numbers))
+# print(next(numbers))
+# print(next(numbers))
+# print(next(numbers))
 
+def even_generator():
+    n =0
+    n += 2
+    yield n
+    n += 2
+    yield n
+    n += 2
+    yield n
+
+value = even_generator()
+print(next(value))
+print(next(value))
+print(next(value))
+print(next(value))
