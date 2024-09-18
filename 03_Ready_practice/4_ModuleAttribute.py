@@ -196,3 +196,10 @@ b = a.index('mango',2)
 a = [2,3,7]
 print(sum(a,[7]))
 
+
+ 
+     'intersection_update', '',  
+     
+
+ 'difference', 'difference_update',
+'symmetric_difference', 'symmetric_difference_update',
