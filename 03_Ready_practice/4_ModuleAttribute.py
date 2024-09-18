@@ -208,8 +208,19 @@ b = a.index('mango',2)
 
 
 
-a = type(0b101)
+a = type(0x101)
 print(a)
+
+
+text = "   Hello World   "
+result = text.strip()
+print(result)  # Output: "Hello World"
+
+# Removing specific characters
+text = "###Pyt#hon###"
+result = text.strip('#')
+print(result)  # Output: "Python"
+
 
 
 
