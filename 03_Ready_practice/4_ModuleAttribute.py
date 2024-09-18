@@ -163,4 +163,35 @@ number = 1999.565565
 
 a = ['orange','mango','kiwi','guava','mango','pine','mango']
 b = a.index('mango',2)
-print(b)
+# print(b)
+
+# print(dir(list))
+"""
+1.LIST METHODS
+    'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 
+    'remove', 'reverse', 'sort'
+2.TUPLE
+    'count','index'
+3.SET
+    'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'update'
+    'pop', 'remove', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 
+    'issuperset','symmetric_difference', 'symmetric_difference_update', 'union', 
+
+4.DICT METHODS
+    clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+5.STRIMG
+    'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 
+    'find', 'format', 'format_map', 'index', rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 
+    'strip', 'swapcase', ''title', 'translate', 'upper', 'zfill','replace', 'rfind', 'rindex', 'rjust',
+    'rpartition','partition', 'join', 'ljust', 'lower', 'lstrip','removeprefix', 'removesuffix', 
+    'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable',
+    'isspace', 'istitle', 'isupper',  'maketrans', 
+    
+    
+"""
+# lst = [[3,14],[4,7]]
+# print(sum(lst,5))
+
+a = [2,3,7]
+print(sum(a,[7]))
