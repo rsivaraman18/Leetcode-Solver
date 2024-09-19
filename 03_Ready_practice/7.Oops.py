@@ -89,19 +89,27 @@
 # val = Laptop.specs(Laptop)
 # print(val)
 
-class laptop():
+
+## If we dont need class varible and instance variable
+
+
+
+# Example 4 : STATIC METHOD
+class Laptop():
     brand = "Hp Laptop"
-
-    def __init__(self,name,age):
-        self.name = name 
-        self.age = age
     
-    @classmethod
-    def specs(cls):
-        cls.brand = "DELL LAPTOP"
-        print(f"brand changed to {cls.brand}")
-        return cls.brand
+    @staticmethod
+    def specs():
+        length = '17 inch'
+        color = 'black'
+        print('Laptop Specs')
+        return f"length is {length} color is {color}"
     
-
-val = laptop.specs()
+    
+val = Laptop.specs()
 print(val)
+
+
+### @ potta than Work aguthu
+obj = Laptop()
+print(obj.specs())
