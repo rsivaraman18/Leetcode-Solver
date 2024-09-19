@@ -28,27 +28,80 @@
     
 
 ### Example 2 : Class Method
-from datetime import date
+# from datetime import date
 
-class AgeCalcuator:
-    def __init__(self,name,age) :
-        self.name = name
+# class AgeCalcuator:
+#     def __init__(self,name,age) :
+#         self.name = name
+#         self.age = age
+
+#     def description(self,):
+#         print(f"{self.name} age is {self.age} years")
+
+#     @classmethod
+#     def age_from_year(cls,name,birth_year):
+#         current_year = date.today().year
+#         age = current_year - birth_year
+#         return cls(name,age)
+    
+
+# # myage = AgeCalcuator("Raj",1995)
+# # myage.description()
+
+# obj = AgeCalcuator.age_from_year('raj',1997)
+# print(obj.description())
+    
+
+### CLASS METHOD 3
+# class laptop():
+#     brand = "Hp Laptop"
+
+#     def __init__(self,name,age):
+#         self.name = name 
+#         self.age = age
+    
+#     @classmethod
+#     def specs(cls):
+#         cls.brand = "DELL LAPTOP"
+#         print(f"brand changed to {cls.brand}")
+#         return cls.brand
+    
+
+# val = laptop.specs()
+# print(val)
+
+
+
+# class Laptop():
+#     brand = "Hp Laptop"
+
+#     def __init__(self,name,age):
+#         self.name = name 
+#         self.age = age
+    
+    
+#     def specs(cls):
+#         cls.brand = "DELL LAPTOP"
+#         print(f"brand changed to {cls.brand}")
+#         return cls.brand
+    
+
+# val = Laptop.specs(Laptop)
+# print(val)
+
+class laptop():
+    brand = "Hp Laptop"
+
+    def __init__(self,name,age):
+        self.name = name 
         self.age = age
-
-    def description(self,):
-        print(f"{self.name} age is {self.age} years")
-
+    
     @classmethod
-    def age_from_year(cls,name,birth_year):
-        current_year = date.today().year
-        age = current_year - birth_year
-        return cls(name,age)
+    def specs(cls):
+        cls.brand = "DELL LAPTOP"
+        print(f"brand changed to {cls.brand}")
+        return cls.brand
     
 
-# myage = AgeCalcuator("Raj",1995)
-# myage.description()
-
-obj = AgeCalcuator.age_from_year('raj',1997)
-print(obj.description())
-    
-
+val = laptop.specs()
+print(val)
