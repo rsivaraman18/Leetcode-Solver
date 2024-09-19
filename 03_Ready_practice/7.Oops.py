@@ -1,5 +1,5 @@
 ### LEARN STATIC METHOD
-
+### Example 1
 class Calculator:
     def __init__(self,version) :
         self.version = version
@@ -26,3 +26,5 @@ if __name__ =="__main__":
 
     print(Calculator.addition_numbers(10,20.30))
     
+
+### Example 2
