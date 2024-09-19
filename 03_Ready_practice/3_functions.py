@@ -33,23 +33,35 @@
 # total = reduce(addition,numbers,numbers2)
 # print(total)
 
-from functools import reduce
-L = [1,2,43,4,5,10,23,15,7]
-m = reduce(lambda x,y : x if x>y else y , L)
-print(m)
+# from functools import reduce
+# L = [1,2,43,4,5,10,23,15,7]
+# m = reduce(lambda x,y : x if x>y else y , L)
+# print(m)
 
 
 """ Hello functools"""
 # print(__doc__)
 
-def caller():
-    "sadsad"
-# print(dir())
-print(__doc__) 
+# def caller():
+#     "sadsad"
+# # print(dir())
+# print(__doc__) 
 
-"""
-This module demonstrates the use of __doc__.
-"""
-import pandas as pd
-print(__doc__)  # Prints the module-level docstring
-print(__package__)
+# """
+# This module demonstrates the use of __doc__.
+# """
+# import pandas as pd
+# print(__doc__)  # Prints the module-level docstring
+# print(__package__)
+
+
+class MyClass:
+    def method(self):
+        local_var = 50  # Local variable
+        print(local_var)
+
+obj = MyClass()
+obj.method()  # Output: 50
+
+# The following line will raise an error because local_var is not accessible outside the method
+# print(local_var)  # NameError: name 'local_var' is not defined
