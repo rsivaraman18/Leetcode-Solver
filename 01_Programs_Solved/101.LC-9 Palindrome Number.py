@@ -11,7 +11,7 @@ class Solution:
             return False
  
 #********************************************************
-        
+         
 def pal(x):
     temp = str(x)
     rev = temp[::-1]
